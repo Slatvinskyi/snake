@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="app.js"></script>
     <title>snake</title>
 </head>
 <body>
 
     <button class="start">Start</button>
+    <div class="sound">Sound
+    <audio id="audio" loop="true" src="songs/ukulele.mp3"></audio>
+   
+    <button onclick="document.getElementById('audio').play()">on</button>
+    <button onclick="document.getElementById('audio').pause()">off</button></div>
+    
     <div class="score">Score:<span>0</span></div>
     <div class="grid">
         <div></div>
@@ -31,7 +39,6 @@
         <div></div>
         <div></div>
         <div></div>
-        <div class="apple"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -110,10 +117,15 @@
         <div></div>
         <div></div>
         <div></div>
+        <div><
         <div></div>
         <div></div>
         <div></div>
     </div>
+    <!--<input type="checkbox" value="PLAY" onclick="play()">Sound</input>-->
+    
+    
     
 </body>
+
 </html>

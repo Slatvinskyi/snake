@@ -1,9 +1,11 @@
+
 .grid {
     width: 200px;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
+    background-color:black;
 }
 
 .grid div {
@@ -12,9 +14,32 @@
 }
 
 .snake {
-    background-color: black;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem green,
+              0 0 0.8rem green,
+              0 0 2.8rem green,
+              inset 0 0 1.3rem green;
+    
 }
 
 .apple {
     background-color: rgb(252, 17, 17);
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+   
+}
+
+.button {
+    position: relative;
 }
