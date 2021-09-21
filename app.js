@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const squares = document.querySelectorAll('.grid div')
     const scoreDisplay = document.querySelector('span')
     const startBtn = document.querySelector('.start')
+    const sound = document.getElementById("sound");
   
     const width = 10
     let currentIndex = 0 //so first div in our grid
@@ -60,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(interval)
         intervalTime = intervalTime * speed
         interval = setInterval(moveOutcomes, intervalTime)
+        sound.play()
+
       }
       squares[currentSnake[0]].classList.add('snake')
     }
